@@ -16,6 +16,8 @@
 		F58C70572013467500CDBC98 /* NSColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C70562013467500CDBC98 /* NSColorExt.swift */; };
 		F58C705A20134AF200CDBC98 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C705820134AF200CDBC98 /* DashBoardViewController.swift */; };
 		F58C705D20134B0800CDBC98 /* NSViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C705C20134B0800CDBC98 /* NSViewExt.swift */; };
+		F5E442BE2016278A00D26283 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442BD2016278A00D26283 /* Navigator.swift */; };
+		F5E442C02016284000D26283 /* NSStoryBoard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442BF2016284000D26283 /* NSStoryBoard+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		F58C70562013467500CDBC98 /* NSColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorExt.swift; sourceTree = "<group>"; };
 		F58C705820134AF200CDBC98 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		F58C705C20134B0800CDBC98 /* NSViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewExt.swift; sourceTree = "<group>"; };
+		F5E442BD2016278A00D26283 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		F5E442BF2016284000D26283 /* NSStoryBoard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryBoard+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,6 @@
 		F58C7035201336AF00CDBC98 = {
 			isa = PBXGroup;
 			children = (
-				F5E442B72016253A00D26283 /* Models */,
-				F5E442B82016254F00D26283 /* API */,
-				F5E442B92016255A00D26283 /* Extensions */,
 				F58C7040201336AF00CDBC98 /* EGx */,
 				F58C703F201336AF00CDBC98 /* Products */,
 				FADEED316EEDDAC8A156B764 /* Pods */,
@@ -80,8 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				F5E442B62016252D00D26283 /* Assets */,
+				F5E442B82016254F00D26283 /* API */,
+				F5E442B92016255A00D26283 /* Extensions */,
+				F5E442B72016253A00D26283 /* Models */,
 				F5E442BA201625E700D26283 /* View Controllers */,
 				F58C7041201336AF00CDBC98 /* AppDelegate.swift */,
+				F5E442BD2016278A00D26283 /* Navigator.swift */,
 			);
 			path = EGx;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			children = (
 				F58C70562013467500CDBC98 /* NSColorExt.swift */,
 				F58C705C20134B0800CDBC98 /* NSViewExt.swift */,
+				F5E442BF2016284000D26283 /* NSStoryBoard+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -307,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E442BE2016278A00D26283 /* Navigator.swift in Sources */,
 				F58C705A20134AF200CDBC98 /* DashBoardViewController.swift in Sources */,
 				F58C70572013467500CDBC98 /* NSColorExt.swift in Sources */,
+				F5E442C02016284000D26283 /* NSStoryBoard+.swift in Sources */,
 				F58C7042201336AF00CDBC98 /* AppDelegate.swift in Sources */,
 				F58C705D20134B0800CDBC98 /* NSViewExt.swift in Sources */,
 				F58C705220133B9700CDBC98 /* MainSplitViewController.swift in Sources */,
