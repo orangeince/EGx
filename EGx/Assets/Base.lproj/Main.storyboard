@@ -762,6 +762,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="LIX-zF-eM1" id="hgc-Fm-UvB"/>
+                        <outlet property="nameLabel" destination="U0Y-RN-Vpm" id="hUP-Dy-TaJ"/>
                     </connections>
                 </viewController>
                 <customObject id="Zhv-F1-dhu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

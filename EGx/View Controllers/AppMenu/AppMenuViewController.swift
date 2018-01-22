@@ -7,6 +7,10 @@
 //
 
 import Cocoa
+import Moya
+import RxSwift
+import RxCocoa
+import Kingfisher
 
 class AppMenuViewController: NSViewController {
 
@@ -20,10 +24,34 @@ class AppMenuViewController: NSViewController {
             imageView.layer?.borderWidth = 2
         }
     }
+    @IBOutlet weak var nameLabel: NSTextField!
+    
+    let provider = MoyaProvider<GitLabService>()
+    let bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.wantsLayer = true
         view.layer?.backgroundColor = NSColor(hex: "#FAFAFA").cgColor
+        
+//        provider.rx.request(.accout)
+//            .subscribe(onSuccess: { (response) in
+//                print(response)
+//            }) { (error) in
+//                print(error)
+//        }
+//        .disposed(by: bag)
+        
+        provider.rx.request(.accout)
+            .model(User.self)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onSuccess: { [weak self] user in
+                self?.imageView.kf.setImage(with: user.avatarUrl.url)
+                self?.nameLabel.stringValue = user.username
+            }) { error in
+                print(error)
+            }
+            .disposed(by: bag)
     }
 
 }

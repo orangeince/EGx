@@ -18,6 +18,13 @@
 		F58C705D20134B0800CDBC98 /* NSViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C705C20134B0800CDBC98 /* NSViewExt.swift */; };
 		F5E442BE2016278A00D26283 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442BD2016278A00D26283 /* Navigator.swift */; };
 		F5E442C02016284000D26283 /* NSStoryBoard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442BF2016284000D26283 /* NSStoryBoard+.swift */; };
+		F5E442C220162C7D00D26283 /* GitLabService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442C120162C7D00D26283 /* GitLabService.swift */; };
+		F5E442C420162EFF00D26283 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442C320162EFF00D26283 /* String+.swift */; };
+		F5E442C62016340000D26283 /* Moya+rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442C52016340000D26283 /* Moya+rx.swift */; };
+		F5E442C8201637AC00D26283 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442C7201637AC00D26283 /* Base.swift */; };
+		F5E442CA2016385D00D26283 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442C92016385D00D26283 /* User.swift */; };
+		F5E442CC2016396800D26283 /* Mapper+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442CB2016396800D26283 /* Mapper+.swift */; };
+		F5E442CE20163C8400D26283 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442CD20163C8400D26283 /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,13 @@
 		F58C705C20134B0800CDBC98 /* NSViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewExt.swift; sourceTree = "<group>"; };
 		F5E442BD2016278A00D26283 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		F5E442BF2016284000D26283 /* NSStoryBoard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryBoard+.swift"; sourceTree = "<group>"; };
+		F5E442C120162C7D00D26283 /* GitLabService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLabService.swift; sourceTree = "<group>"; };
+		F5E442C320162EFF00D26283 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		F5E442C52016340000D26283 /* Moya+rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+rx.swift"; sourceTree = "<group>"; };
+		F5E442C7201637AC00D26283 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		F5E442C92016385D00D26283 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F5E442CB2016396800D26283 /* Mapper+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mapper+.swift"; sourceTree = "<group>"; };
+		F5E442CD20163C8400D26283 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +119,8 @@
 		F5E442B72016253A00D26283 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F5E442C7201637AC00D26283 /* Base.swift */,
+				F5E442C92016385D00D26283 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,6 +128,7 @@
 		F5E442B82016254F00D26283 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				F5E442C120162C7D00D26283 /* GitLabService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -122,6 +139,10 @@
 				F58C70562013467500CDBC98 /* NSColorExt.swift */,
 				F58C705C20134B0800CDBC98 /* NSViewExt.swift */,
 				F5E442BF2016284000D26283 /* NSStoryBoard+.swift */,
+				F5E442C320162EFF00D26283 /* String+.swift */,
+				F5E442C52016340000D26283 /* Moya+rx.swift */,
+				F5E442CB2016396800D26283 /* Mapper+.swift */,
+				F5E442CD20163C8400D26283 /* Date+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -313,12 +334,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E442CA2016385D00D26283 /* User.swift in Sources */,
 				F5E442BE2016278A00D26283 /* Navigator.swift in Sources */,
 				F58C705A20134AF200CDBC98 /* DashBoardViewController.swift in Sources */,
+				F5E442C420162EFF00D26283 /* String+.swift in Sources */,
 				F58C70572013467500CDBC98 /* NSColorExt.swift in Sources */,
+				F5E442C62016340000D26283 /* Moya+rx.swift in Sources */,
 				F5E442C02016284000D26283 /* NSStoryBoard+.swift in Sources */,
 				F58C7042201336AF00CDBC98 /* AppDelegate.swift in Sources */,
+				F5E442C220162C7D00D26283 /* GitLabService.swift in Sources */,
+				F5E442C8201637AC00D26283 /* Base.swift in Sources */,
+				F5E442CC2016396800D26283 /* Mapper+.swift in Sources */,
 				F58C705D20134B0800CDBC98 /* NSViewExt.swift in Sources */,
+				F5E442CE20163C8400D26283 /* Date+.swift in Sources */,
 				F58C705220133B9700CDBC98 /* MainSplitViewController.swift in Sources */,
 				F58C70542013425500CDBC98 /* AppMenuViewController.swift in Sources */,
 			);
