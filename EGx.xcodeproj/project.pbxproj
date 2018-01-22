@@ -58,6 +58,9 @@
 		F58C7035201336AF00CDBC98 = {
 			isa = PBXGroup;
 			children = (
+				F5E442B72016253A00D26283 /* Models */,
+				F5E442B82016254F00D26283 /* API */,
+				F5E442B92016255A00D26283 /* Extensions */,
 				F58C7040201336AF00CDBC98 /* EGx */,
 				F58C703F201336AF00CDBC98 /* Products */,
 				FADEED316EEDDAC8A156B764 /* Pods */,
@@ -76,26 +79,71 @@
 		F58C7040201336AF00CDBC98 /* EGx */ = {
 			isa = PBXGroup;
 			children = (
-				F58C70552013464800CDBC98 /* Extensions */,
+				F5E442B62016252D00D26283 /* Assets */,
+				F5E442BA201625E700D26283 /* View Controllers */,
 				F58C7041201336AF00CDBC98 /* AppDelegate.swift */,
-				F58C705120133B9700CDBC98 /* MainSplitViewController.swift */,
-				F58C7045201336AF00CDBC98 /* Assets.xcassets */,
-				F58C7047201336AF00CDBC98 /* Main.storyboard */,
-				F58C704A201336AF00CDBC98 /* Info.plist */,
-				F58C704B201336AF00CDBC98 /* EGx.entitlements */,
-				F58C70532013425500CDBC98 /* AppMenuViewController.swift */,
-				F58C705820134AF200CDBC98 /* DashBoardViewController.swift */,
 			);
 			path = EGx;
 			sourceTree = "<group>";
 		};
-		F58C70552013464800CDBC98 /* Extensions */ = {
+		F5E442B62016252D00D26283 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F58C7045201336AF00CDBC98 /* Assets.xcassets */,
+				F58C704A201336AF00CDBC98 /* Info.plist */,
+				F58C7047201336AF00CDBC98 /* Main.storyboard */,
+				F58C704B201336AF00CDBC98 /* EGx.entitlements */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F5E442B72016253A00D26283 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5E442B82016254F00D26283 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F5E442B92016255A00D26283 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				F58C70562013467500CDBC98 /* NSColorExt.swift */,
 				F58C705C20134B0800CDBC98 /* NSViewExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5E442BA201625E700D26283 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5E442BC2016261F00D26283 /* DashBoard */,
+				F5E442BB2016260600D26283 /* AppMenu */,
+				F58C705120133B9700CDBC98 /* MainSplitViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F5E442BB2016260600D26283 /* AppMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F58C70532013425500CDBC98 /* AppMenuViewController.swift */,
+			);
+			path = AppMenu;
+			sourceTree = "<group>";
+		};
+		F5E442BC2016261F00D26283 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F58C705820134AF200CDBC98 /* DashBoardViewController.swift */,
+			);
+			path = DashBoard;
 			sourceTree = "<group>";
 		};
 		FADEED316EEDDAC8A156B764 /* Pods */ = {
@@ -397,7 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3RD23MG297;
-				INFOPLIST_FILE = EGx/Info.plist;
+				INFOPLIST_FILE = EGx/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oi.town.EGx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,7 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3RD23MG297;
-				INFOPLIST_FILE = EGx/Info.plist;
+				INFOPLIST_FILE = EGx/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oi.town.EGx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
