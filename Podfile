@@ -10,6 +10,7 @@ target 'EGx' do
   pod 'RealmSwift'
   pod 'RxRealm'
   pod 'Then'
+  pod 'SnapKit'
   pod 'Reachability'
   pod 'Kingfisher', '~> 4.0'
   pod 'SwiftyJSON'

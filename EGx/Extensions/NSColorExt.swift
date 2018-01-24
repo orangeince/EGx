@@ -44,3 +44,9 @@ extension NSColor {
         }
     }
 }
+
+extension NSColor {
+    class var mainText: NSColor { return NSColor(hex: "#D3C6E0") }
+    class var bg0: NSColor { return NSColor(hex: "#FAFAFA") }
+}
+
