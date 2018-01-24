@@ -865,12 +865,13 @@
                                 <rect key="frame" x="18" y="691" width="74" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Dash board" id="FAM-G5-DIY">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" red="0.41853487491607666" green="0.43655019998550415" blue="0.56923109292984009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.41960784313725491" green="0.43529411764705883" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KZ9-D3-46i" secondAttribute="trailing" constant="20" symbolic="YES" id="E4t-vS-Yeb"/>
                             <constraint firstItem="KZ9-D3-46i" firstAttribute="top" secondItem="gMd-Be-ED2" secondAttribute="top" constant="12" id="MG1-8h-FXe"/>
                             <constraint firstItem="CAa-UZ-SwV" firstAttribute="leading" secondItem="gMd-Be-ED2" secondAttribute="leading" id="eIX-z1-IFA"/>
                             <constraint firstAttribute="trailing" secondItem="CAa-UZ-SwV" secondAttribute="trailing" id="hgb-A4-FgG"/>
