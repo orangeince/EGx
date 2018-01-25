@@ -12,7 +12,7 @@ class TodoCenterViewController: NSSplitViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        view.backgroundColor = .white
     }
     
 }

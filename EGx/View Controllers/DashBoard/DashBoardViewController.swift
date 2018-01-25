@@ -10,7 +10,7 @@ import Cocoa
 
 class DashBoardViewController: NSViewController {
 
-    //@IBOutlet weak var sparatorView: NSView!
+    @IBOutlet weak var sparatorView: NSView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

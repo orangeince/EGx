@@ -18,6 +18,7 @@
 		F58C705D20134B0800CDBC98 /* NSViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C705C20134B0800CDBC98 /* NSViewExt.swift */; };
 		F5B1C56C201A247F006EAF38 /* TodoCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1C56B201A247F006EAF38 /* TodoCenterViewController.swift */; };
 		F5B1C56E201A28A5006EAF38 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1C56D201A28A5006EAF38 /* MenuView.swift */; };
+		F5B1C570201A2CAB006EAF38 /* TodoListViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1C56F201A2CAB006EAF38 /* TodoListViewContoller.swift */; };
 		F5DEEE6F2018E22A00F3E5C2 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DEEE6E2018E22A00F3E5C2 /* Label.swift */; };
 		F5E442BE2016278A00D26283 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442BD2016278A00D26283 /* Navigator.swift */; };
 		F5E442C02016284000D26283 /* NSStoryBoard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442BF2016284000D26283 /* NSStoryBoard+.swift */; };
@@ -47,6 +48,7 @@
 		F58C705C20134B0800CDBC98 /* NSViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewExt.swift; sourceTree = "<group>"; };
 		F5B1C56B201A247F006EAF38 /* TodoCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCenterViewController.swift; sourceTree = "<group>"; };
 		F5B1C56D201A28A5006EAF38 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F5B1C56F201A2CAB006EAF38 /* TodoListViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewContoller.swift; sourceTree = "<group>"; };
 		F5DEEE6E2018E22A00F3E5C2 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		F5E442BD2016278A00D26283 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		F5E442BF2016284000D26283 /* NSStoryBoard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryBoard+.swift"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F5B1C56B201A247F006EAF38 /* TodoCenterViewController.swift */,
+				F5B1C56F201A2CAB006EAF38 /* TodoListViewContoller.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				F58C705D20134B0800CDBC98 /* NSViewExt.swift in Sources */,
 				F5E442CE20163C8400D26283 /* Date+.swift in Sources */,
 				F58C705220133B9700CDBC98 /* MainSplitViewController.swift in Sources */,
+				F5B1C570201A2CAB006EAF38 /* TodoListViewContoller.swift in Sources */,
 				F58C70542013425500CDBC98 /* AppMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
