@@ -14,6 +14,12 @@ import RxCocoa
 import Kingfisher
 import SnapKit
 
+enum AppMenu: String {
+    case dashboard = "Dashboard"
+    case todo = "Todo"
+    case mr = "MR"
+}
+
 class AppMenuViewController: NSViewController {
     @IBOutlet weak var imageView: NSImageView! {
         didSet {
@@ -35,16 +41,26 @@ class AppMenuViewController: NSViewController {
             tableView.dataSource = self
         }
     }
+    let menus: [AppMenu] = [.dashboard, .todo, .mr]
     
     let provider = MoyaProvider<GitLabService>()
+    fileprivate let _menuSubject = PublishSubject<AppMenu>()
+    var curMenu: Observable<AppMenu> {
+        return _menuSubject.asObservable()
+    }
+    
     let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor(hex: "#FAFAFA").cgColor
-        
-        
+        view.backgroundColor = .bg0
+
+        if let first = menus.first {
+            _menuSubject.onNext(first)
+        }
+    }
+    
+    func setupBindings() {
         let profile = provider.rx.request(.accout)
             .model(User.self)
             .asObservable()
@@ -66,7 +82,7 @@ class AppMenuViewController: NSViewController {
 
 extension AppMenuViewController: NSTableViewDataSource, NSTableViewDelegate {
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return 3
+        return menus.count
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
@@ -75,57 +91,20 @@ extension AppMenuViewController: NSTableViewDataSource, NSTableViewDelegate {
             cell = MenuView()
             cell?.identifier = NSUserInterfaceItemIdentifier(rawValue: "menu")
         }
-        
-        switch row {
-        case 0:
-            cell?.titleLabel.title = "Dashboard"
-        case 1:
-            cell?.titleLabel.title = "Todo"
-        case 2:
-            cell?.titleLabel.title = "MR"
-        default:
-            cell?.titleLabel.title = "Menu「\(row)」"
-        }
+        cell?.titleLabel.title = menus[row].rawValue
         return cell
-
     }
     
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         return 64
     }
+    
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        guard let table = notification.object as? NSTableView,
+            table.selectedRow >= 0 else { return }
+        _menuSubject.onNext(menus[table.selectedRow])
+    }
+    
 }
 
-class MenuView: NSTableRowView {
-    let titleLabel = Label(size: 16, color: .mainText)
-    
-    convenience init() {
-        self.init(frame: .zero)
-    }
-    
-    override init(frame frameRect: NSRect) {
-        super.init(frame: frameRect)
-        setupSubviews()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupSubviews()
-    }
-    
-    func setupSubviews() {
-        addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-        }
-    }
-    
-//    override func drawSelection(in dirtyRect: NSRect) {
-//        guard selectionHighlightStyle != .none else { return }
-//        let selectionRect = NSInsetRect(bounds, 2.5, 2.5)
-//        NSColor.highLight.setFill()
-//        let path = NSBezierPath(roundedRect: selectionRect, xRadius: 6, yRadius: 6)
-//        path.fill()
-//        path.stroke()
-//    }
 
-}

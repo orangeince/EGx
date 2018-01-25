@@ -16,6 +16,8 @@
 		F58C70572013467500CDBC98 /* NSColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C70562013467500CDBC98 /* NSColorExt.swift */; };
 		F58C705A20134AF200CDBC98 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C705820134AF200CDBC98 /* DashBoardViewController.swift */; };
 		F58C705D20134B0800CDBC98 /* NSViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C705C20134B0800CDBC98 /* NSViewExt.swift */; };
+		F5B1C56C201A247F006EAF38 /* TodoCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1C56B201A247F006EAF38 /* TodoCenterViewController.swift */; };
+		F5B1C56E201A28A5006EAF38 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1C56D201A28A5006EAF38 /* MenuView.swift */; };
 		F5DEEE6F2018E22A00F3E5C2 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DEEE6E2018E22A00F3E5C2 /* Label.swift */; };
 		F5E442BE2016278A00D26283 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442BD2016278A00D26283 /* Navigator.swift */; };
 		F5E442C02016284000D26283 /* NSStoryBoard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E442BF2016284000D26283 /* NSStoryBoard+.swift */; };
@@ -43,6 +45,8 @@
 		F58C70562013467500CDBC98 /* NSColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorExt.swift; sourceTree = "<group>"; };
 		F58C705820134AF200CDBC98 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		F58C705C20134B0800CDBC98 /* NSViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewExt.swift; sourceTree = "<group>"; };
+		F5B1C56B201A247F006EAF38 /* TodoCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCenterViewController.swift; sourceTree = "<group>"; };
+		F5B1C56D201A28A5006EAF38 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		F5DEEE6E2018E22A00F3E5C2 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		F5E442BD2016278A00D26283 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		F5E442BF2016284000D26283 /* NSStoryBoard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryBoard+.swift"; sourceTree = "<group>"; };
@@ -107,6 +111,14 @@
 			path = EGx;
 			sourceTree = "<group>";
 		};
+		F5B1C56A201A2436006EAF38 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1C56B201A247F006EAF38 /* TodoCenterViewController.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
 		F5E442B62016252D00D26283 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +165,7 @@
 		F5E442BA201625E700D26283 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F5B1C56A201A2436006EAF38 /* Todo */,
 				F5E442BC2016261F00D26283 /* DashBoard */,
 				F5E442BB2016260600D26283 /* AppMenu */,
 				F58C705120133B9700CDBC98 /* MainSplitViewController.swift */,
@@ -164,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				F58C70532013425500CDBC98 /* AppMenuViewController.swift */,
+				F5B1C56D201A28A5006EAF38 /* MenuView.swift */,
 			);
 			path = AppMenu;
 			sourceTree = "<group>";
@@ -340,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5E442CA2016385D00D26283 /* User.swift in Sources */,
+				F5B1C56C201A247F006EAF38 /* TodoCenterViewController.swift in Sources */,
 				F5E442BE2016278A00D26283 /* Navigator.swift in Sources */,
 				F58C705A20134AF200CDBC98 /* DashBoardViewController.swift in Sources */,
 				F5E442C420162EFF00D26283 /* String+.swift in Sources */,
@@ -351,6 +366,7 @@
 				F5E442C220162C7D00D26283 /* GitLabService.swift in Sources */,
 				F5E442C8201637AC00D26283 /* Base.swift in Sources */,
 				F5E442CC2016396800D26283 /* Mapper+.swift in Sources */,
+				F5B1C56E201A28A5006EAF38 /* MenuView.swift in Sources */,
 				F58C705D20134B0800CDBC98 /* NSViewExt.swift in Sources */,
 				F5E442CE20163C8400D26283 /* Date+.swift in Sources */,
 				F58C705220133B9700CDBC98 /* MainSplitViewController.swift in Sources */,
